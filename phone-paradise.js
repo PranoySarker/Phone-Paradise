@@ -73,7 +73,7 @@ const displayPhoneDetails = phone => {
     const div = document.createElement('div');
     div.classList.add('details');
     div.innerHTML = `<h1 class ="fw-bold">${phone.data.slug}</h1>
-                    <h4>Realease Date: ${phone.data.releaseDate}</h4>
+                    <h4>Realease Date: ${phone.data?.releaseDate ?? "coming soon"}</h4>
                     <hr>
                      <h2 class="fw-bold">Main Features</h2>
                      <h5>Chipset: ${phone.data.mainFeatures.chipSet}</h5>
